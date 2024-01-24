@@ -1,11 +1,10 @@
-# enmu-cs234-sports_club_management_system
-Eastern New Mexico University - CS 234 (computer science II) class - Sports Club Management System
+# EASTERN NEW MEXICO UNIVERSITY - CS 234 COMPUTER SCIENCE II - SPORTS CLUB MANAGMENT SYSTEM
 
-PROJECT:  
-  Sports Management System
+  Project:  
+    Sports Club Management System
   
   Class:
-    CS 234 - Compueter Science II
+    CS 234 - Computer Science II
 
   Semester:
     Spring 2024
@@ -14,7 +13,7 @@ PROJECT:
     Java
 
   Description:
-    This project is to create a sports management system with a GUI that encorporates at least 5 classes.  The 5 classes will encorporate inheritance, persistent information and crud operations.
+    This project is to create a sports management system with a GUI that encorporates at least 5 classes.  The 5 classes will demonstrate inheritance, persistent information and crud operations.
 
   Contributing Team Members:  
     Nicholas Vialpando
