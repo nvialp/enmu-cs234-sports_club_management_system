@@ -1,0 +1,52 @@
+public class Lab6 {
+
+    public static void main(String[] args) {
+        //Create a Hospital
+        Hospital stHellen = new Hospital("St Hellen");
+        // Create Doctors
+        Doctor house = new Doctor("House");
+        Doctor doom = new Doctor("Doom");
+        Doctor dre = new Doctor("Dre");
+        
+        stHellen.addDoctors(house);
+        stHellen.addDoctors(doom);
+        stHellen.addDoctors(dre);
+        
+        //Create three soldiers
+        Soldier rambo = new Soldier();
+        rambo.setHealth(5);
+        rambo.setSoldierType("Green Beret");
+        rambo.addWeapon("Bow & Arrow");
+        rambo.addWeapon("Bazooka");
+        
+        Soldier bad_guy_1 = new Soldier( 5, "Sniper");
+        bad_guy_1.addWeapon("Rifle");
+        bad_guy_1.addWeapon("Pistol");
+        
+        Soldier bad_guy_2 = new Soldier();
+        bad_guy_2.setHealth(1);
+        bad_guy_2.setSoldierType("Archer");
+        bad_guy_2.addWeapon("Grenade");
+        
+        System.out.println(rambo);
+        System.out.println(bad_guy_1);
+        System.out.println(bad_guy_2);
+        
+        rambo.shootEnemy(bad_guy_1);  // health 4
+        System.out.println(bad_guy_1);
+        
+        rambo.shootEnemy(bad_guy_2); // health 0
+        
+        rambo.shootEnemy(bad_guy_1); // health 3
+        rambo.shootEnemy(bad_guy_1); // health 2
+        rambo.shootEnemy(bad_guy_1); // health 1
+        System.out.println(bad_guy_1);
+        stHellen.healPatient(bad_guy_1); // health 2
+        System.out.println(bad_guy_1);
+        rambo.shootEnemy(bad_guy_1); // health 1
+        rambo.shootEnemy(bad_guy_1); // health 0
+        stHellen.healPatient(bad_guy_1);
+          
+    
+    }
+}
