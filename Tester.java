@@ -1,5 +1,4 @@
-public static void
-main (String[]args)
+public static void main (String[] args)
 {
   //creat a new school
   School enmu = new School ();
