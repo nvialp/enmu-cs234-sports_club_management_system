@@ -1,0 +1,64 @@
+
+/**
+ *
+ * @author 
+ */
+import java.util.Scanner;
+
+public class GroupProject {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean done = true;
+        int choice;
+        
+        Customers customer = new Customers();
+        System.out.println(customer.getName());
+        
+       
+        Trainers trainer = new Trainers();
+        System.out.println(trainer.getName());
+        trainer.setName("billy bob");
+        System.out.println(trainer.getName());
+        trainer.setCost(45);
+        trainer.getCost();
+        
+//        Classes class = new Classes("cycling", 50);
+        
+        
+        do{
+            System.out.println("Database system\n"
+                    + "1. Add new Customer: \n"
+                    + "2. Delete Customer: \n"
+                    + "3. Change Customer Information: \n"
+                    + "4. View Trainers \n"
+                    + "5. View Classes: \n"
+                    + "6. Exit the Program \n");
+            choice = scanner.nextInt();
+            switch(choice){
+                case 1:
+                    System.out.println("case 1");
+                    break;
+                case 2:
+                    System.out.println("case 2");
+                    break;
+                case 3:
+                    System.out.println("case 3");
+                    break;
+                case 4:
+                    System.out.println("Case 4");
+                    break;
+                case 5:
+                    System.out.println("Case 5");
+                    break;
+                case 6:
+                    done = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice, please try again");
+            }
+        }// end of do1
+        while(done);
+        
+    }
+}
