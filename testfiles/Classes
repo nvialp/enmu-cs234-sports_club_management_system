@@ -1,0 +1,64 @@
+
+/**
+ *
+ * @author rhett
+ */
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Classes {
+    private String name;
+    private int cost;
+    private ArrayList<Trainers> trainers;
+    private ArrayList<Customers> participants;
+    
+    public Classes(String name, int cost){
+        this.name = name;
+        this.cost = cost;
+        this.trainers = new ArrayList<>();
+        this.participants = new ArrayList<>();
+        
+    }// end of constructor
+    
+    public Trainers getTrainer(){
+        Random rand = new Random();
+        int randomIndex = rand.nextInt(trainers.size());
+        return trainers.get(randomIndex);
+    }
+    
+    public void setCustomer(Customers newCustomer){
+        participants.add(newCustomer);
+    }// end of setCustomer
+    
+//    public Customers getCustomer(){
+//        for (Customers element : participants){
+//            return element;
+//        }
+//        
+//    }
+    
+    public int getCost(){
+        return cost;
+    }// end of getCost
+    
+    public void setCost(int cost){
+        this.cost = cost;
+    }// end of setCost
+    
+    public String getName(){
+        return name;
+    }// end of getName
+    
+    public void setName(String name){
+        this.name = name;
+    }// end of setName
+    
+    public String toString(){
+        String output = "The " + this.name + " class costs $" + this.cost + 
+                " and has the following instructor: " + this.getTrainer();
+        return output;
+    }
+}
+
+
+
