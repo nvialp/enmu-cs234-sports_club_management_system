@@ -1,0 +1,44 @@
+
+/**
+ *
+ * @author rhett
+ */
+public class Trainers {
+    
+    private String name;
+    private int cost;
+    private String speciality;
+    
+    public Trainers(){
+        this.name = "Jane Doe";
+        this.cost = 30;
+        this.speciality = "Olympic Lifting";
+    }// end of constructor
+    
+    public String getName(){
+        return name;
+       
+    }// end of getName
+    
+    public void setName(String name){
+        this.name = name;
+    }// end of setName
+    
+    public int getCost(){
+        return cost;
+    }// end of getCost
+ 
+    public void setCost(int cost){
+        this.cost = cost;
+    }// end of setCost
+    
+    public String getSpeciality(){
+        return speciality;
+    }// end of getSpeciality 
+    
+    public void setSpeciality(String speciality){
+        this.speciality = speciality;
+    }// end of setSpeciality
+    
+    
+}
